@@ -1,0 +1,82 @@
+<div class="row">
+            <!-- CONTEÚDO LATERAL ESQUERDO -->
+            <div class="col-md-12 col-sm-12">
+                <h1 class="form-page-title">Criando sua Assinatura</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Para criar a sua assinatura institucional realize os seguintes passos:</p>
+                        <ul>
+                            <li>Preencha os campos abaixo corretamente, usando letra maiúscula apenas na primeira letra de cada termo do nome e função.</li>
+                            <li>Copie o código gerado na última caixa.</li>
+                            <li>Após copiar o código, siga as instruções <a href="https://support.google.com/mail/answer/8395" target="_blank" rel="noopener noreferrer" role="link">deste tutorial</a>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 25px; margin-bottom: 25px">
+                    <div class="col-sm-12 col-md-6 content__text">
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input class="form-control" name="nome" id="nome" type="text" placeholder="Nome" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="cargo" id="cargo" type="text" placeholder="Função" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="telefone" id="telefone" type="text" placeholder="Telefone (Se você preferir, pode deixar em branco)">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-6 content__text">
+                        <div class="text-center">
+                            <p>Pré visualização</p>
+                        </div>
+                        <div id="preview">
+                            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+                            <table border="0" cellpadding="0" cellspacing="0" style="min-width: 380px;">
+                                <tbody><tr>
+                                    <td rowspan="2"><img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/logoAssinatura.png" width="80" height="104" alt="Logo Escoteiros do Brasil"></td>
+                                    <td height="81" style="vertical-align:middle;">
+                                        <div>
+                                            <p class="nome" id="nomePreview" style="margin: 0px 0px 0px 15px; max-width: 240px; line-height: 5px; font-family: 'Montserrat', sans-serif; color: rgb(44, 70, 121); font-size: 12px; font-weight: bold;"></p>
+                                            <p class="funcao" id="cargoPreview" style="margin: 15px 0px 0px 15px; max-width: 240px; line-height: 10px; font-family: 'Montserrat', sans-serif; color: rgb(86,146,206); font-size: 9px; font-style: italic;"></p>
+                                            <p class="tel" id="telefonePreview" style="margin: 15px 0px 0px 15px; line-height: 0px; color: rgb(44, 70, 121); font-size: 11px; font-family: 'Montserrat', sans-serif; font-style: italic;"></p>
+                                        </div>
+                                    </td>
+                                    <td rowspan="2" style="padding-left: 20px;">
+                                        <img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/selo2021.png" width="50" alt="Selo Melhores ONGS 2021">
+                                        <img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/doar.png" width="50" alt="Instituo Doar">
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button onclick="copiar()" class="btn btn-primary" style="margin-bottom: 10px">Copiar Para Outlook/Gmail</button>
+                        <button onclick="copiarApp()" class="btn btn-primary" style="margin-bottom: 10px">Copiar Para Thunderbird</button>
+                        <div id="code" style="border: 1px solid grey; padding: 10px; max-height: 100px; overflow: auto">
+                            <div id="codecode">
+                                &lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"&gt;
+                                &lt;table border="0" cellpadding="0" cellspacing="0" style="min-width: 380px;"&gt;
+                                &lt;tr&gt;
+                                &lt;td rowspan="2"&gt;&lt;img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/logoAssinatura.png" width="80" height="104" alt="Logo Escoteiros do Brasil"/&gt;&lt;/td&gt;
+                                &lt;td height="81" style="vertical-align:middle;"&gt;
+                                &lt;div&gt;
+                                &lt;p style="margin: 0px 0px 0px 15px; max-width: 240px; line-height: 5px; font-family: 'Montserrat', sans-serif; color: rgb(44, 70, 121); font-size: 12px; font-weight: bold;"&gt;&lt;/p&gt;
+                                &lt;p style="margin: 15px 0px 0px 15px; max-width: 240px; line-height: 10px; font-family: 'Montserrat', sans-serif; color: rgb(86,146,206); font-size: 9px; font-style: italic;"&gt;&lt;/p&gt;
+                                &lt;p style="margin: 15px 0px 0px 15px; line-height: 0px; color: rgb(44, 70, 121); font-size: 11px; font-family: 'Montserrat', sans-serif; font-style: italic;"&gt;&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;/td&gt;
+                                &lt;td style="padding-left: 20px" rowspan="2"&gt;
+                                &lt;img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/selo2021.png" alt="Selo Melhores ONGS 2021" width="50" /&gt;
+                                &lt;img src="https://www.escoteiros.org.br/wp-content/themes/escoteiros-theme/img/doar.png" alt="Instituo Doar" width="50" /&gt;
+                                &lt;/td&gt;                                
+                                &lt;/tr&gt;
+                                &lt;/table&gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
